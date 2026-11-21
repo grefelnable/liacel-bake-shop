@@ -1,0 +1,708 @@
+
+/* =================================
+   LIACEL BAKE SHOP
+   Global Styles
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F8F6F1;
+    color: #352D27;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* HEADER */
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 5%;
+    background-color: #F8F6F1;
+}
+
+/* BRAND */
+
+.brand {
+    text-align: center;
+}
+
+.brand h1 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.brand p {
+    font-size: 9px;
+    letter-spacing: 4px;
+    margin-top: 4px;
+}
+
+/* NAVIGATION */
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #352D27;
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #A17B5A;
+}
+
+/* HEADER BUTTON */
+
+.header-cta {
+    background-color: #49382E;
+    color: white;
+    text-decoration: none;
+    padding: 14px 22px;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.header-cta:hover {
+    background-color: #755641;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 70px 10%;
+    min-height: 600px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content > p:first-child {
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.hero-content h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(42px, 4.2vw, 58px);
+    line-height: 1.1;
+    margin-bottom: 25px;
+    letter-spacing: -1.5px;
+}
+
+.hero-content h2 + p {
+    max-width: 420px;
+    line-height: 1.8;
+    color: #766B60;
+    margin-bottom: 35px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #49382E;
+    color: white;
+    padding: 16px 28px;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #755641;
+}
+
+/* HERO IMAGE */
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    display: block;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 7%;
+        gap: 35px;
+    }
+
+    .hero-content h2 {
+        font-size: 44px;
+    }
+
+    .hero-image img {
+        height: 350px;
+    }
+    .site-header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.navigation {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero-content .header-cta {
+    display: inline-block;
+}
+
+
+}
+
+/* ================================
+   SIGNATURE CAKES
+================================ */
+
+.signature-cakes {
+    padding: 90px 8%;
+    background-color: #FDFCF9;
+}
+
+/* SECTION HEADING */
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 45px;
+}
+
+.eyebrow {
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.section-heading h2 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    line-height: 1.15;
+}
+
+.section-description {
+    max-width: 330px;
+    color: #766B60;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+/* CAKE GRID */
+
+.cake-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+.cake-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: center;
+}
+
+/* CAKE IMAGES */
+
+.cake-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+/* CAKE INFORMATION */
+
+.cake-label {
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #98795F;
+}
+
+.cake-info h3 {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.cake-info p {
+    color: #766B60;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.cake-button {
+    display: inline-block;
+    background-color: #49382E;
+    color: white;
+    text-decoration: none;
+    padding: 13px 18px;
+    font-size: 11px;
+    transition: background-color 0.3s ease;
+}
+
+.cake-button:hover {
+    background-color: #755641;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .signature-cakes {
+        padding: 60px 7%;
+    }
+
+    .section-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .cake-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .cake-card {
+        grid-template-columns: 1fr;
+    }
+
+    .cake-image img {
+        height: 320px;
+    }
+
+}
+
+/* ================================
+   THE LIACEL EXPERIENCE
+================================ */
+
+.liacel-experience {
+    padding: 110px 8%;
+    background-color: #F1EDE6;
+}
+
+/* HEADING */
+
+.experience-heading {
+    max-width: 650px;
+    margin-bottom: 75px;
+}
+
+.experience-heading h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(36px, 4vw, 54px);
+    line-height: 1.15;
+    color: #352D27;
+    margin: 20px 0;
+    letter-spacing: -1px;
+}
+
+.experience-intro {
+    max-width: 450px;
+    color: #766B60;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* THREE COLUMNS */
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+}
+
+.experience-item {
+    border-top: 1px solid #CFC5B9;
+    padding-top: 25px;
+}
+
+.experience-number {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #98795F;
+}
+
+.experience-item h3 {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    color: #352D27;
+    margin: 25px 0 15px;
+}
+
+.experience-item p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #766B60;
+    max-width: 280px;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .liacel-experience {
+        padding: 75px 7%;
+    }
+
+    .experience-heading {
+        margin-bottom: 45px;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .experience-item h3 {
+        margin-top: 18px;
+    }
+
+}
+
+/* ABOUT LIACEL */
+
+.our-story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 90px;
+  padding: 120px 8%;
+  background: #f1ede6;
+}
+
+.story-image img {
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+  display: block;
+}
+
+.story-content {
+  max-width: 520px;
+}
+
+.story-content .eyebrow {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #94745b;
+  margin-bottom: 24px;
+}
+
+.story-content h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(38px, 4vw, 58px);
+  line-height: 1.1;
+  color: #352b26;
+  margin-bottom: 25px;
+}
+
+.story-content p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #786e64;
+  margin-bottom: 18px;
+}
+
+.story-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #49372d;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  border-bottom: 1px solid #49372d;
+  padding-bottom: 8px;
+  transition: opacity 0.3s ease;
+}
+
+.story-link:hover {
+  opacity: 0.6;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+  .our-story {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 75px 7%;
+  }
+
+  .story-image img {
+    height: 380px;
+  }
+
+  .story-content h2 {
+    font-size: 40px;
+  }
+}
+
+/* HOW TO ORDER SECTION */
+
+.how-to-order {
+  padding: 120px 8%;
+  background: #f9f7f2;
+}
+
+.order-heading {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 75px;
+}
+
+.order-eyebrow {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #94745b;
+  margin-bottom: 22px;
+}
+
+.order-heading h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(36px, 4vw, 54px);
+  line-height: 1.15;
+  color: #352b26;
+  margin-bottom: 18px;
+}
+
+.order-heading p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #786e64;
+}
+
+.order-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px;
+  max-width: 1100px;
+  margin: 0 auto 100px;
+}
+
+.order-step {
+  border-top: 1px solid #d5c9bb;
+  padding-top: 25px;
+}
+
+.step-number {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #94745b;
+}
+
+.step-icon {
+  font-size: 30px;
+  color: #94745b;
+  margin: 25px 0;
+}
+
+.order-step h3 {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  color: #352b26;
+  margin-bottom: 15px;
+}
+
+.order-step p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #786e64;
+  max-width: 280px;
+}
+
+/* ORDER CALL TO ACTION */
+
+.order-cta {
+  text-align: center;
+  background: #eee7dd;
+  padding: 65px 25px;
+}
+
+.order-cta h3 {
+  font-family: Georgia, serif;
+  font-size: clamp(28px, 3vw, 38px);
+  color: #352b26;
+  margin-bottom: 12px;
+}
+
+.order-cta p {
+  color: #786e64;
+  margin-bottom: 30px;
+}
+
+.order-button {
+  display: inline-block;
+  background: #49372d;
+  color: #fff;
+  padding: 18px 35px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  transition: background 0.3s ease;
+}
+
+.order-button:hover {
+  background: #705545;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .how-to-order {
+    padding: 75px 7%;
+  }
+
+  .order-heading {
+    margin-bottom: 50px;
+  }
+
+  .order-steps {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    margin-bottom: 65px;
+  }
+
+  .order-step {
+    padding-top: 20px;
+  }
+
+  .step-icon {
+    margin: 18px 0;
+  }
+
+  .order-cta {
+    padding: 50px 20px;
+  }
+
+}
+
+/* FOOTER */
+
+.site-footer {
+  background: #332923;
+  color: #f7f4ee;
+  padding: 80px 8% 30px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 50px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.footer-brand h2 {
+  font-family: Georgia, serif;
+  font-size: 32px;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+.footer-brand span {
+  font-size: 10px;
+  letter-spacing: 5px;
+}
+
+.footer-brand p {
+  color: #c9bfb3;
+  line-height: 1.8;
+  margin-top: 25px;
+}
+
+.footer-container h3 {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  margin-bottom: 22px;
+}
+
+.footer-container a,
+.footer-pickup p {
+  display: block;
+  color: #c9bfb3;
+  text-decoration: none;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+.footer-container a:hover {
+  color: #ffffff;
+}
+
+.footer-pickup small {
+  display: block;
+  color: #a99c8f;
+  line-height: 1.7;
+  margin-top: 15px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #5a4b40;
+  margin-top: 70px;
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  color: #a99c8f;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 25px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+
